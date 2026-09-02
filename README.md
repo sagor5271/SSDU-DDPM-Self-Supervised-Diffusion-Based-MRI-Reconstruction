@@ -372,7 +372,11 @@ These values are the aggregate test results reported by the experiment.
 
 The following visualization shows a representative test slice comparing the SENSE zero-filled reconstruction and the SSDU DDPM reconstruction.
 
-![Representative reconstruction](qualitative_result.png)
+
+<img width="2685" height="763" alt="example_001_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/f64b724c-825b-4b3f-b8a2-2061471ce358" />
+<img width="2685" height="763" alt="example_010_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/af23c6b3-da60-4b29-8d22-7f18f0096769" />
+
+
 
 For this representative slice:
 
