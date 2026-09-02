@@ -84,8 +84,14 @@ _Fill in after running on your data — e.g._
 
 | | PSNR (dB) | SSIM | NMSE |
 |---|---|---|---|
-| SENSE zero-filled baseline | – | – | – |
-| SSDU conditional DDPM (this repo) | – | – | – |
+| SENSE zero-filled baseline |  31.74 | 0.85 | 0.01 |
+| SSDU conditional DDPM (this repo) | 35.55 | 0.90 | 0.048 |
+
+
+<img width="2685" height="763" alt="example_001_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/ee3a2615-b78c-43cc-8f4b-691cb56f5e5d" />
+<img width="2685" height="763" alt="example_010_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/f28c301b-b04f-4254-b21e-4173f98a7bc3" />
+
+
 
 ## Known issues / open design questions
 
