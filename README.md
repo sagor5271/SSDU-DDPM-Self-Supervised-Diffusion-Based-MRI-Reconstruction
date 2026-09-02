@@ -378,11 +378,6 @@ The following visualization shows a representative test slice comparing the SENS
 
 
 
-For this representative slice:
-
-- SENSE ZF: **33.33 dB PSNR**, **0.8971 SSIM**
-- SSDU DDPM: **35.63 dB PSNR**, **0.9242 SSIM**
-
 The absolute-error map provides a visual indication of the remaining reconstruction error.
 
 ---
