@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Checkpoints & large artifacts
+ssdu_diffusion_checkpoints/
+ssdu_diffusion_results/
+*.pt
+*.pth
+*.ckpt
+
+# Data (never commit raw FastMRI files)
+data/
+*.h5
+*.hdf5
+
+# Notebooks / OS / editor cruft
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+*.log
