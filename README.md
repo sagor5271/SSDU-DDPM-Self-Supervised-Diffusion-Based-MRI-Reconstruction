@@ -1,10 +1,11 @@
 # Self-Supervised SSDU Conditional DDPM for Multi-Coil MRI Reconstruction
 
-A clean and modular implementation of **pure self-supervised MRI reconstruction** using **Self-Supervised Data Undersampling (SSDU)** and a **Conditional Denoising Diffusion Probabilistic Model (DDPM)**.
-
-The framework is designed for **FastMRI multi-coil knee MRI reconstruction** and performs training without using fully sampled ground-truth images as reconstruction targets.
-
----
+A pure self-supervised (SSDU-style) conditional diffusion model for
+undersampled multi-coil MRI reconstruction, evaluated on the FastMRI
+knee multi-coil dataset. No fully-sampled ground truth is used during
+training — the model is trained entirely with Self-Supervised
+learning via Data Undersampling (SSDU, Yaman et al., MRM 2020),
+extended with a DDPM generator.
 
 ## Highlights
 
