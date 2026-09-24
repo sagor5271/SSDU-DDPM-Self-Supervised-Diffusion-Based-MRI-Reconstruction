@@ -210,9 +210,16 @@ IMPROVEMENT OVER SENSE-ZF
 * **SSIM increased from 0.8261 to 0.8626**
 * **NMSE decreased from 0.011228 to 0.006776**
 
-<img width="2685" height="763" alt="example_001_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/c7d7f1d7-0024-46b9-9c17-b9335622ed12" />
+  
+<img width="2685" height="736" alt="example_006_CORPD_FBK (3)" src="https://github.com/user-attachments/assets/08b0f6af-3247-4bae-8c95-b98a3ff7bc16" />
 
-<img width="2685" height="763" alt="example_010_CORPD_FBK (1)" src="https://github.com/user-attachments/assets/962471d4-dd53-45d9-8948-116980361b19" />
+<img width="2685" height="736" alt="example_010_CORPD_FBK" src="https://github.com/user-attachments/assets/b349078e-5ae6-4d06-9447-08fe00f9cebe" />
+
+<img width="2685" height="736" alt="example_009_CORPD_FBK" src="https://github.com/user-attachments/assets/19b3ae58-3176-481c-b1d2-629845c5ada1" />
+
+<img width="2685" height="736" alt="example_004_CORPD_FBK" src="https://github.com/user-attachments/assets/aa3ec3c8-194d-4c5e-83c6-f15f00eccb58" />
+
+
 
 *Each panel: RSS ground truth, SENSE zero-filled, SSDU DDPM reconstruction, absolute error.*
 
@@ -310,19 +317,6 @@ Per-volume and overall metrics are printed to the console at the end of the run.
 * Fixed-seed SSDU partition and fixed-seed noise for validation
 * Fixed-seed partition at test time
 * Sampling noise comes from the global PyTorch RNG, so results are repeatable for the same seed and hardware but not guaranteed bit-identical across devices
-
----
-
-# Important Experimental Notes
-
-* No adversarial training, GAN loss, or discriminator is used.
-* No fully sampled ground truth is used as a training target.
-* Ground truth is used only for final testing and metric calculation.
-* The ground truth is the plain RSS of fully sampled coil images, independent of any sensitivity map. The SENSE zero-filled baseline uses the classical ACS sensitivity maps.
-* Validation loss is a self-supervised proxy (SSDU loss at a fixed diffusion step), not a reconstruction-quality metric.
-* Volume SSIM is the mean of per-slice scikit-image SSIM using the volume-wide data range, an approximation of the official implementation.
-* Multi-contrast joint reconstruction is implemented but only one contrast is configured. fastMRI knee PD / PD-FS pairing would be by slice index, not by patient.
-* The reported results correspond to this configuration and should be reproduced under the same dataset split, preprocessing, random seed, and evaluation protocol.
 
 ---
 
